@@ -22,6 +22,7 @@
   <li><a href="Tutorials.html">Tutorials</a></li>
   <li><a href="Om Libre-Office.html">Om os</a></li>
   <li><a href="Kontakt.html">Kontakt</a></li>
+  <li><a href="Konkurrence.html">Konkurrence</a></li>
   <li><a href="Support_og_hjælp.html">Support</a></li>
 </ul>
 
@@ -55,7 +56,20 @@
 Mange kontorpakker er meget dyre og du vil derfor kunne spare mange penge ved at skifte til det gratis LibreOffice. Her kan du med vores besparelsesberegner finde ud af, hvor mange penge du ville have sparet ved at anvende LibreOffice fremfor en anden ikke gratis kontorpakke.
 </div>
 <br><br><br><br>
-<button onclick="besparelse()">Click me</button><br><br><br><br>
+<script>
+function besparelse(){
+var a = parseFloat(prompt('Hvor mange måneder har du brugt Microsoft Office eller en anden kontorpakke som koster penge'))
+var b = parseFloat(prompt('Hvor meget har du betalt om måneden for den kontorpakke?'))
+var c = a * b
+alert('Summen af det beløb du kunne have sparet ved at bruge LibreOffice er ' + c +" kr")
+}
+ document.getElementById("Besparelse").innerHTML = txt;
+</script>
+<button onclick="besparelse()">Click me</button>
+
+
+
+<br><br><br><br>
 <div class="ex2" style="background-color: #1c1c1c; padding: 3%;">
 <h1 style="color: white;">Programmer der medfølger:</h1><br>
 <p style="color: white;">Calc: Et stærkt regnark-værktøj:</p><br>
